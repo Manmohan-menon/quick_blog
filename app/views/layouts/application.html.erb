@@ -7,9 +7,13 @@
   <%= csrf_meta_tags %>
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
-<body> 
+<body>
+   <%= render :partial => 'layouts/header' %>
+     
     <div id="main">
         <%= yield %>
     </div>
+
+    <%= render :partial => 'layouts/footer' %>
 </body>
 </html>
