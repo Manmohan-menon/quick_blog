@@ -7,9 +7,9 @@
   <%= csrf_meta_tags %>
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
-<body>
-
-<%= yield %>
-
+<body> 
+    <div id="main">
+        <%= yield %>
+    </div>
 </body>
 </html>
